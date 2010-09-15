@@ -2,7 +2,7 @@
 
 = Proposed Features =
 
-Add your content here.
+-Ability to save the combinations of rename and to filters for reuse.
 
 
 = Implemented Features =
