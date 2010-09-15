@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Trying to set up activity notification forwarding.
+Email notifications should be set up now.
 
 
 = Details =
