@@ -1,0 +1,7 @@
+#summary Page for listing off use cases for our project.
+
+= Use Cases =
+
+(put the use cases here)
+* UC1
+* UC2
