@@ -12,3 +12,10 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+= Best Practices =
+(From the [https://docs.google.com/document/edit?id=1c-J7Mu_4ODoyvUXpZPMXNYK4Lt71nQl-10brnZBzVkU&hl=en&authkey=CKaDpssP&pli=1# Syllabus])
+
+  # Unit test tools: JUnit
+  # Bug Tracking System: The issues tab here on google code
+  # Third party tool: [http://www.jthink.net/jaudiotagger/ JAudioTagger]
