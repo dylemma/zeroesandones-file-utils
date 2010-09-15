@@ -3,6 +3,7 @@
 = Introduction =
 
 Email notifications should be set up now.
+This is a test.
 
 
 = Details =
