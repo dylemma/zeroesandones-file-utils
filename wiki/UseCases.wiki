@@ -3,5 +3,5 @@
 = Use Cases =
 
 (put the use cases here)
-* UC1
-* UC2
+  * UC1
+  * UC2
