@@ -1,0 +1,3 @@
+#summary Sidebar for each page
+
+=Sidebar=
