@@ -1,6 +1,7 @@
 #summary Page for listing off use cases for our project.
 
 = Use Cases =
+Use cases will be driven by our [Features]
 
 (put the use cases here)
   * Simple File Rename
