@@ -24,7 +24,7 @@ Use cases will be driven by our [Features]
 
 (put the use cases here)
   * Use Case: Simple File Rename
-    *ID: UC1
+    * ID: UC1
     * Actors:
       * User: wants to easily rename many files at once
     * Precondition:
