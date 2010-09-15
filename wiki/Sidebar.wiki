@@ -1,7 +1,10 @@
 #summary Sidebar for each page
 
 =File Utils=
+  * [Home]
 ==SD&D==
+  * [Assignments]
   * [UseCases]
+  
 ==Project==
   * [Features]
