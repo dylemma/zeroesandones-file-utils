@@ -24,17 +24,25 @@ Use cases will be driven by our [Features]
 
 (put the use cases here)
   * Simple File Rename
-    # User has downloaded a torrent with a bunch of inconsistently named files
+    Name: Simple File Rename
+    ID: UC1
+    Actors:
+      * User: wants to easily rename many files at once
+    Precondition:
+      * Program is open
+      * User has a bunch of inconsistently named target files
+    Sequence of Actions:
     # User opens the FileUtils program
-    # User selects the "Browse" button
-    # UI displays a Browse dialog window
-    # User selects the folder that contains the downloaded files
-    # UI updates display to show the files with their original names
-    # User enters text into the "Replace" field
-    # UI begins to update the new names of the files
-    # User enters text into the "With" field
-    # UI updates display to show new names next to original names
+    # User selects "Browse"
+    # System displays a Browse dialog window
+    # User selects the folder that contains the target files
+    # System updates display to show the files with their original names
+    # User enters text for the "Match" within the target filenames
+    # System begins to update the new names of the files
+    # User enters text for the "Replacement" within the target filenames
+    # UI updates display to show new names that have "Match" replaced with "Replacement"
     # User selects the "Apply" button
-    # System renames each affected file
-    # UI updates display to show the newly changed names of the files
-  * UC2
+    # System renames each affected file, and displays this change.
+    Post Condition:
+      * Files are named consistently, according to the user's input
+      * Happy user
