@@ -8,5 +8,13 @@
     # User opens the FileUtils program
     # User selects the "Browse" button
     # UI displays a Browse dialog window
-    # User selects the folder that contains
+    # User selects the folder that contains the downloaded files
+    # UI updates display to show the files with their original names
+    # User enters text into the "Replace" field
+    # UI begins to update the new names of the files
+    # User enters text into the "With" field
+    # UI updates display to show new names next to original names
+    # User selects the "Apply" button
+    # System renames each affected file
+    # UI updates display to show the newly changed names of the files
   * UC2
