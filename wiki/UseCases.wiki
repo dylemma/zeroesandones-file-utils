@@ -3,7 +3,7 @@
 = Use Cases =
 
 (put the use cases here)
-  * UC1
+  * Simple File Rename
     # User has downloaded a torrent with a bunch of inconsistently named files
     # User opens the FileUtils program
     # User selects the "Browse" button
