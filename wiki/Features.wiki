@@ -4,5 +4,8 @@
 
 -Ability to save the combinations of rename and to filters for reuse.
 
+-Ability to rename songs, possibly automatically, based off of included metadata
+
+
 
 = Implemented Features =
