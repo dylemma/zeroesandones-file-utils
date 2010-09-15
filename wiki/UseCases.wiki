@@ -3,6 +3,25 @@
 = Use Cases =
 Use cases will be driven by our [Features]
 
+==Use Case Guidelines==
+
+===Required===
+  * Name
+  * ID
+  * Actors
+  * Pre-Conditions
+  * Sequence of Actions (numbered)
+  * Post-Conditions
+
+===Optional===
+  * Stakeholders
+  * Special Requirements
+  * Technology and Data Variations
+  * Frequency
+  * Open Issues
+
+==Current Cases==
+
 (put the use cases here)
   * Simple File Rename
     # User has downloaded a torrent with a bunch of inconsistently named files
