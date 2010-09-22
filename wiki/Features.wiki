@@ -4,7 +4,7 @@
 
   * Ability to save the combinations of rename and to filters for reuse.
   * Ability to rename songs, possibly automatically, based off of included metadata
-
+  * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries
 
 
 = Implemented Features =
