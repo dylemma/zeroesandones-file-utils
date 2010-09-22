@@ -6,6 +6,7 @@
   * Ability to rename songs, possibly automatically, based off of included metadata
   * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries
   * Simple browsing capability within the UI
+  * Ability to get music metadata from an online database
 
 
 = Implemented Features =
