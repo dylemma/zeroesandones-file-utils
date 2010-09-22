@@ -1,0 +1,6 @@
+#summary Vision Statement
+
+==Vision Statement==
+
+_"The vision statement, also known as a project charter, should include an elevator summary of the project, a business case for the project (including a short analysis of the competition, market space, or similar commercial off the shelf software), a description of the project stakeholders, a list of the major features of the completed project, and a list of the major risks of the project."_
+
