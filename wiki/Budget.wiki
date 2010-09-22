@@ -1,0 +1,5 @@
+#summary Project Budget
+
+==Project Budget ==
+
+_Even though we can't pay you to complete your project, you need to develop a project budget which shows how much money you would need to develop your project if someone were paying you to do so. You should include the cost of any materials which you may need to purchase, such as software, hardware, or any other resources necessary for the project or team. You must also show your staffing costs (salary/paychecks). The budget must be presented in terms of US dollars, as that is the local currency. Attempt to make this as realistic as possible, although creativity leeway is provided._
