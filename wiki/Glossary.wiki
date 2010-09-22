@@ -1,0 +1,7 @@
+#summary Glossary of Terms
+
+==Glossary==
+
+_A comprehensive list of the domain terms used within your project. Include informative, clear definitions of each term._
+
+  * *_Renaming Rule:_* The combination of a "Match" and "Replace" pair that defines how to rename any file. A single renaming rule may be applied to many files, and may not always affect each file.
