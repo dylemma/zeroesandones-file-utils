@@ -12,7 +12,7 @@ Keep track of our assignments/deliverables here. When adding a new assignment, k
 
   The vision statement, also known as a project charter, should include an elevator summary of the project, a business case for the project (including a short analysis of the competition, market space, or similar commercial off the shelf software), a description of the project stakeholders, a list of the major features of the completed project, and a list of the major risks of the project.
 
-  * ===[UseCases Use Cases !(20% complete)]===
+  * ===[UseCases Use Cases (20% complete)]===
 
   A list of all Use Cases with at least 20% fully dressed, as discussed in class, and the texts. Fully dressed use cases include, at the minimum, name, ID, actors, brief description, pre- and post-conditions, as well as a full main sequence of events with numbered steps and system responses for each step. Additionally, include extensions and branching, if appropriate.
 
