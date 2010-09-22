@@ -44,3 +44,18 @@ Use cases will be driven by our [Features]
     * Post Condition:
       * Files are named consistently, according to the user's input
       * Happy user
+
+
+  * Use Case: Invalid Regular Expression
+    * ID: UC2
+    * Actors:
+      * User: is attempting to use regular expressions for the file renaming process
+    * Precondition:
+      * Program is open
+      * User has already browsed to a directory containing target files
+    * Sequence of Actions:
+      # User enters an invalid regular expression for the "Match" on target filenames
+      # System identifies the expression as invalid; Updates display with an error notification
+    * Post Condition
+      * Selecting "Apply" will not cause anything to happen
+      * The place where the user can enter "Match" text will be marked up to make the error obvious
