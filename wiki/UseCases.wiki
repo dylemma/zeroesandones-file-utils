@@ -60,25 +60,25 @@ Use cases will be driven by our [Features]
       * Selecting "Apply" will not cause anything to happen
       * The place where the user can enter "Match" text will be marked up to make the error obvious
 
-Use Case: Music Renaming
-  * ID: UC3
-  * Actors:
-    * User: wants to rename files according to music metadata tags
-    * Tag Database: online database that can return metadata given a particular song
-  * Preconditions:
-    * User has an active internet connection
-    * User has browsed to a directory containing music files
-  * Sequence of Actions:
-    # User selects a metadata option to add (Title, Genre, etc.. also plain text), to create a renaming rule for the music files.
-      * For plain text, the user will be able to enter the actual text
-    # User selects "Add"
-    # UI updates to show the added option
-    # User repeats from step 1 until satisfied
-    # User may modify the selected options:
-      * User selects one of the options he/she added earlier
-      * User selects "Up" or "Down" to change the ordering of the options
-      * User may select "Remove" to remove an option
-    # User selects "Apply"
-    # System renames the music files according to the selected options, updates display.
-  * Post Condition
-    # Music files are now all named in accordance with the renaming rule created by the user
+  * Use Case: Music Renaming
+    * ID: UC3
+    * Actors:
+      * User: wants to rename files according to music metadata tags
+      * Tag Database: online database that can return metadata given a particular song
+    * Preconditions:
+      * User has an active internet connection
+      * User has browsed to a directory containing music files
+    * Sequence of Actions:
+      # User selects a metadata option to add (Title, Genre, etc.. also plain text), to create a renaming rule for the music files.
+        * For plain text, the user will be able to enter the actual text
+      # User selects "Add"
+      # UI updates to show the added option
+      # User repeats from step 1 until satisfied
+      # User may modify the selected options:
+        * User selects one of the options he/she added earlier
+        * User selects "Up" or "Down" to change the ordering of the options
+        * User may select "Remove" to remove an option
+      # User selects "Apply"
+      # System renames the music files according to the selected options, updates display.
+    * Post Condition
+      # Music files are now all named in accordance with the renaming rule created by the user
