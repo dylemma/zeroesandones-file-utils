@@ -121,4 +121,4 @@ Use cases will be driven by our [Features]
          * Returned to main window with fields filled
        # User selects cancel
          * Returned to main window with fields as they were
-  * Post Conditions: User returned to main window, if  from load, then fields are populated, if from cancel, then the fields are as they were left.
+    * Post Conditions: User returned to main window, if  from load, then fields are populated, if from cancel, then the fields are as they were left.
