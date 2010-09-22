@@ -4,7 +4,11 @@
   * [Home]
 ===SD&D===
   * [Assignments]
-  * [UseCases]
+    * [Vision]
+    * [UseCases]
+    * [Glossary]
+    * [Schedule]
+    * [Budget]
   
 ===Project===
   * [Features]
