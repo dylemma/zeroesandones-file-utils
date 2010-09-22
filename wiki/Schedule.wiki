@@ -3,3 +3,14 @@
 ==Project Schedule==
 
 _A detailed schedule of the phases and iterations of your project. You must include iterations and dates for the development of each use case or feature, as well as estimates of the time required to complete each item on the schedule. The schedule must show the specific dates each phase and iteration ends. Also include preliminary details and timing of the tasks included in completing your project._
+
+
+
+
+===Software Development Priorities===
+
+  # Create initial UI for music tag renamer
+  # ...
+  # Metadata Reader is Functional
+  # Metadata Rename Support Implemented
+  # Metadata Database API usage
