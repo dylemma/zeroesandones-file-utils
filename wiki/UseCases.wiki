@@ -82,23 +82,26 @@ Use cases will be driven by our [Features]
       # System renames the music files according to the selected options, updates display.
     * Post Condition
       # Music files are now all named in accordance with the renaming rule created by the user
-Use Case: Save Renaming Rule
-ID: UC3
-Actor: User: Wants to save a renaming rule
-Preconditions: User has some text entered in either Rename or To fields
-Sequence of actions:
-•	User selects Save Rule  Save Rule Window opens
-•	IF( Rule is not valid ):
-o	Rule is highlighted red
-•	User selects Save
-o	IF(No text in filename): Warn: Filename must have text
-	Return to save rule window, focus on filename
-o	IF(Filename already exists): Dialog: <filename>.rul already exists. Overwrite?
-	Selects Yes  Overwrites, returns to main window
-	Selects No  Returns to, return to Save rule window: Focus on filename.
-•	User selects Cancel:
-o	Return to main window
-Post Conditions: User is returned to main window, and depending on choices made, has a rule saved
+  * Use Case: Save Renaming Rule
+    * ID: UC4
+    * Actors 
+      * User: Wants to save a renaming rule
+    * Preconditions: User has some text entered in either Rename or To fields
+    * Sequence of actions: 
+     	# User selects Save Rule:
+          * System: Save Rule Window opens
+        # IF( Rule is not valid )
+ 	  * System: Rule is highlighted red
+	# User selects Save
+        # IF(No text in filename)
+          * System: Warn: Filename must have text
+          * System: Return to save rule window, focus on filename
+        # IF(Filename already exists): 
+          * System displays dialog: <filename>.rul already exists. Overwrite?
+             * User: Selects No System: Returns to save rule window, focus on filename.
+	     * User: Selects Yes System: Overwrites, returns to main window
+             * User selects Cancel System: Returns to main window
+  * Post Conditions: User is returned to main window, and depending on choices made, has a rule saved
 Use Case: Load Renaming Rule
 ID: UC4
 Actor: User: Wants to load a renaming rule
