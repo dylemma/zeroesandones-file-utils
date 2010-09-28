@@ -12,5 +12,5 @@ _(still need competition etc, and risks)_
 
 *Competition*
 
-[http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - Windows only! We beat them there... but they kinda kick our asses.
-[http://myprogramspace.blogspot.com/2008/07/krename-multi-file-rename-tool-v0.html This was listed as best on someone's list of file renamer utilities] - has all of our features... we could use this for inspiration for new features.
+  * [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - Windows only! We beat them there... but they kinda kick our asses.
+  * [http://myprogramspace.blogspot.com/2008/07/krename-multi-file-rename-tool-v0.html This was listed as best on someone's list of file renamer utilities] - has all of our features... we could use this for inspiration for new features.
