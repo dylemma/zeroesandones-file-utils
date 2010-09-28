@@ -11,4 +11,5 @@ The File Renamer is a great utility for the organization-conscious computer user
 _(still need competition etc, and risks)_
 
 *Competition*
+
 [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - Windows only! We beat them there... but they kinda kick our asses.
