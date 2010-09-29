@@ -8,7 +8,7 @@ _"The vision statement, also known as a project charter, should include an eleva
 
 === *Summary* ===
 
-FiRE ( File Renaming Engine) is a utility for the organization-conscious computer user. The goal is an easy to use yet powerful graphical user interface utility that will allow anyone to quickly and easily rename many files at once, without the hassle of clicking and typing over and over. Given a simple pattern, a click of a button will rename all of the files that it applies to. The pattern could be a word, a combination of metadata (for music and other media), or even a regular expression.
+FiRE (File Renaming Engine) is a multi-platform utility for the organization-conscious computer user. FiRE's easy-to-use yet powerful user interface will allow anyone to quickly and easily rename many files at once, without the hassle of clicking and typing over and over. Given a simple pattern, a click of a button will rename all of the files that it applies to. The pattern could be a word, a combination of metadata (for music and other media), or even a regular expression. Users can easily save their patterns as "Renaming Rules" for later use.
 
 ===*Business Case*===
 
