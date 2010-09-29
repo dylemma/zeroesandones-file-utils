@@ -25,8 +25,8 @@ In terms of overhead, or operating costs, the contractors are mostly self contai
 
 || *Category* || *Description* || *Estimated Cost* ||
 ||Labor||Contract Development Team Zeroes and Ones|| $60 an hour,  20 hours a week for 3 developers over 12 weeks to complete the project is *$43,200*||
-||  ||Contract Artist Ninja Design|| $50 an hour, 20 hours a week for one artist over 6 weeks is *$6000*||
-||Operating Costs|| Miscellaneous cost  || * $2000 * ||
-||Deployment|| Web Hosting|| * $500 * ||
-||  || Technical Support || One member of team Zeroes and Ones, at the rate of $60 an hour, for an estimated 10 hours per month for four months is *$2400*||
-
+||  ||Contract Artist Ninja Design|| $50 an hour, 20 hours a week for one artist over 6 weeks is *$6,000*||
+||Operating Costs|| Miscellaneous cost  || * $2,000 * ||
+||Deployment|| Web Hosting|| * $5,000 * ||
+||  || Technical Support || One member of team Zeroes and Ones, at the rate of $60 an hour, for an estimated 10 hours per month for four months is *$2,400*||
+|| *Total* ||  ||  *$58,600*||
