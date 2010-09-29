@@ -19,9 +19,13 @@ Beta phase will concentrate on 3 weekly builds, with expectations listed below f
 ==Beta 3==
 ===Wednesday November 3===
   * Features to be filled in for inception delivery
+==Final Beta Release(Beta 4)==
+===Wednesday November 10===
+  * Ideally there should not be any features planned for the final beta release
+  * Time should instead be spent on finalizing the functionality for the first product review
 
 =1st Product Review=
-The Beta 3 build will be stabilized and cleaned up as much as possible in the week after its launch, and will be the product we demonstrate at the first Product Review(November 10th).
+The Beta 3 build will be stabilized and cleaned up as much as possible in the week after its launch.  When the stabilization and polishing are completed, it will be designated the final beta release and will be the product we demonstrate at the first Product Review(November 10th).
 
 =Alpha Builds=
 The Alpha Build Session will begin with a discussion of the 1st Product review.  Any concerns or ideas that were suggested during this review will be discussed and we will place these into the alpha build schedule.  Also at this meeting we will brainstorm any more ideas that we have come up internally for extended features on the project.
@@ -30,8 +34,16 @@ The Alpha Build Session will begin with a discussion of the 1st Product review. 
   * These features will be addressed at the post-review meeting.
 ==Alpha 2==
 ===Wednesday November 24===
-  * These features will be addressed at the post-review meeting.
+  * These features will be addressed at the post-review meeting..
+==Alpha 3==
+===Wednesday December 1===
+  * The final alpha release is our final product, ideally the goals for this release are only a polishing of the features added during the alpha cycle.
 
+=Final Product Review=
+The Alpha 3 build will be cleaned up and demonstrated on December 1.  Any issues addressed in this product review will be recorded, and possibly dealt with in the remaining week if possible.
+
+=Final Presentation=
+After the final product review, the Alpha 3 release will be finalized and present as our final product in the presentations at the end of the semester.
 
 
 ===Software Development Priorities===
