@@ -6,9 +6,20 @@ _"The vision statement, also known as a project charter, should include an eleva
 
 ----
 
-The File Renamer is a great utility for the organization-conscious computer user. It will allow anyone to quickly and easily rename many files at once, without the hassle of clicking and typing over and over. Given a simple pattern, a click of a button will rename all of the files that it applies to. The pattern could be a word, a combination of metadata (for music and other media), or even a regular expression.
+=== *Summary* ===
 
-*Competition*
+The File Renamer is a utility for the organization-conscious computer user. The goal is an easy to use yet powerful graphical user interface utility that will allow anyone to quickly and easily rename many files at once, without the hassle of clicking and typing over and over. Given a simple pattern, a click of a button will rename all of the files that it applies to. The pattern could be a word, a combination of metadata (for music and other media), or even a regular expression.
+
+===*Business Case*===
+
+As of right now, there exists a market opportunity for simple file renamers. In the three most popular current operating systems (Microsoft Windows, Apple O.S., LINUX distributions, accounting for nearly 90% of user operating systems), no mass file renaming utility is included. Thus, users must look to distributable solutions.
+
+Despite this, the File Renamer utility is being developed as a free software. Universal platform, cost software is easily recommendable to end users, thus creating the opportunity for many more end users to try out the utility than software that is restrictive and priced. A large install base generates visibilty for the company that supplies the software as well as customer loyalty. Revenues from website advertisements will increase, as well as ......... (something something)....
+
+===*Competition*===
+
+Currently, there exists several file renaming alternatives. However, those that are free are generally single platform, or have a very short features list. There do exists several paid alternatives as well, but they should not be considered competition in our free market.
+
   * [http://www.softpedia.com/get/System/File-Management/CKRename.shtml CKRename] - A free program that offers basic renaming options
   * [http://www.sherrodcomputers.com/products_filerenamer.cfm Sherrod's Renamer] - The version of this program that can undo and log rename events costs $19.99.
   * [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - A windows-only, well-featured file renamer. Supports metadata from music _and_ pictures.
