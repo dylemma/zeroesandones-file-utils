@@ -8,11 +8,9 @@ _Even though we can't pay you to complete your project, you need to develop a pr
 
 
 
-The File Utility Project is being developed at a rate unprecedented for it's scope. 
-However, with proper time management and budgeting, the Utility can be created on an
-overall budget that is far less than the average software utility. 
+FiRE is being developed at a rate unprecedented for it's scope. However, with proper time management and budgeting, the Engine can be created on an overall budget that is far less than the average software utility. 
 
-The project will be contracted out to the development team Zeroes and Ones, an reputable contractor. Instead of spending overhead resources on a central operating location, work is done remotely from individual contractor's chosen workstation. The team already has necessary equipment and software, hence the slightly higher than average hourly rate. 
+The project will be contracted out to the development team Zeroes and Ones, a reputable contractor. Instead of spending overhead resources on a central operating location, work is done remotely from individual contractor's chosen workstation. The team already has necessary equipment and software, hence the slightly higher than average hourly rate. 
 
 The project itself can be developed using freely-distributed tools, eliminating the need
 for costly proprietary software. The developers have assumed familiarity with the tools, eliminating the need for training. 
