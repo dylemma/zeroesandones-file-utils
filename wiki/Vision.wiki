@@ -37,6 +37,10 @@ Currently, there exists several file renaming alternatives. However, those that 
 
   * Failure to rise to the level of our competition
   * Proposed features going unimplemented or being unimplementable
+  * Google cloud failure-unable to retrieve code
+  * Eclipse RCP unable to export to different platforms
+  * Disgruntled users from unintentional file alteration
+  * Malicious use of FiRE
 
 ===*Features*===
 See the [Features] page for a list of available features.
