@@ -1,7 +1,7 @@
 #summary Page listing proposed features for the project, as well as implemented features.
 
 = Implemented Features =
-
+  * Preview results before actually renaming anything.
   * Renaming files based off of string segment inputs, replacing with a new string segment.
   * Renaming files based off of regular expressions (useful to truncate gibberish at the end of a file name)
   * Checking for valid RegEx input
@@ -10,8 +10,12 @@
 
 = Proposed Features =
   * Ability to save the combinations of rename and to filters for reuse.
+  * Ability to change capitalization of file names in various ways (`Title Format`, `ALL CAPS`, `all lowercase`, `Sentence format`, and potentially more).
   * Ability to rename songs based off of included metadata
   * Ability to rename pictures based off of included EXIF metadata
+  * Create numbered lists by adding an incrementing number within a filename
+  * Ability to undo any rename action taking place over the course of FiRE's execution.
+  * Ability to log undo events (or not- user's choice)
   * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries
   * Simple browsing capability within the UI
   * Ability to get music metadata from an online database
