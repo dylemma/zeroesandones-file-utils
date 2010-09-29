@@ -20,20 +20,17 @@ Beta phase will concentrate on 3 weekly builds, with expectations listed below f
 ===Wednesday November 3===
   * Features to be filled in for inception delivery
 
-The Beta 3 build will be stabilized and cleaned up as much as possible in the week after its launch, as it will be presented on November 10th for a Product Review.
-
-The Alpha Build Session will begin with a discussion of the 1st Product review.  Any concerns or ideas that were suggested during this review will be discussed and we will place these into the alpha build schedule.  Also at this meeting we will brainstorm any more ideas that we have come up internally for extended features on the project.
+=1st Product Review=
+The Beta 3 build will be stabilized and cleaned up as much as possible in the week after its launch, and will be the product we demonstrate at the first Product Review(November 10th).
 
 =Alpha Builds=
-==Alpha 1 (Product Review Release)==
-===Wednesday November 10===
-  * These features will be addressed at the post-review meeting.
-==Alpha 2==
+The Alpha Build Session will begin with a discussion of the 1st Product review.  Any concerns or ideas that were suggested during this review will be discussed and we will place these into the alpha build schedule.  Also at this meeting we will brainstorm any more ideas that we have come up internally for extended features on the project.
+==Alpha 1==
 ===Wednesday November 17===
   * These features will be addressed at the post-review meeting.
-==Alpha 3(If necessary)==
+==Alpha 2==
 ===Wednesday November 24===
-  * The Alpha 3 release is budgeted in case we get behind in our development schedule up to this point, ideally we should be taking the Alpha 2 build and cleaning it up for the final product presentation.
+  * These features will be addressed at the post-review meeting.
 
 
 
