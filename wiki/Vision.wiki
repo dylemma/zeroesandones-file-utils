@@ -20,7 +20,7 @@ The value of free (as in beer) software is always highly appreciated by the aver
 
 ===Stakeholders===
 
-Our development team will be expending a lot of effort to ensure the quality of FIRE. To see it fail would mean hundreds of man-hours gone to waste. Our (hypothetical) client is paying top dollar for a speedy development for the program, and would not want to see that money go down the drain.
+Our development team will be expending a lot of effort to ensure the quality of FiRE. To see it fail would mean hundreds of man-hours gone to waste. Our (hypothetical) client is paying top dollar for a speedy development for the program, and would not want to see that money go down the drain.
 
 
 ===*Competition*===
