@@ -12,19 +12,31 @@ Alpha phase will concentrate on 3 weekly builds, with expectations listed below 
 =Alpha Builds=
 ==Alpha 1==
 ===Wednesday October 20===
+  * Add non-functional UI components for meta-data tagging system.
   * Renaming files based off of string segment inputs, replacing with a new string segment. 
   * Renaming files based off of regular expressions (useful to truncate gibberish at the end of a file name)
-  *
+  * Checking for valid input in renaming fields
+  * Notification of invalid input in renaming fields
+  * Highlighting of affected files in preview view
+  * Simple browsing capability within the UI 
 ==Alpha 2==
 ===Wednesday October 27===
-  * Features to be filled in for inception delivery
+  * Ability to save the file renaming rules for reuse
+  * Ability to load the saved file renaming rule and execute again
+  * Ability to change capitalization of file names in various ways (Title Format, ALL CAPS, all lowercase, Sentence format, and potentially more). 
+  * Create numbered lists by adding an incrementing number within a filename 
+  * Ability to undo any rename action taking place over the course of one FiRE session
+  * Ability to log undo events (or not- user's choice)
 ==Alpha 3==
 ===Wednesday November 3===
-  * Features to be filled in for inception delivery
+  * Ability to rename songs based off of included metadata 
+  * Ability to rename pictures based off of included EXIF metadata 
+  * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries 
+  * Ability to get music metadata from an online database 
+
 ==Final Alpha Release(Alpha 4)==
 ===Wednesday November 10===
-  * Ideally there should not be any features planned for the final alpha release
-  * Time should instead be spent on finalizing the functionality for the first product review
+  * Will serve as a buffer / stabilizing time for the first product review.
 
 =1st Product Review=
 The Alpha 3 build will be stabilized and cleaned up as much as possible in the week after its launch.  When the stabilization and polishing are completed, it will be designated the final alpha release and will be the product we demonstrate at the first Product Review(November 10th).
