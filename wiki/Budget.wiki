@@ -8,7 +8,7 @@ _Even though we can't pay you to complete your project, you need to develop a pr
 
 
 
-FiRE is being developed at a rate unprecedented for it's scope. However, with proper time management and budgeting, the Engine can be created on an overall budget that is far less than the average software utility. 
+FIRE is being developed at a rate unprecedented for it's scope. However, with proper time management and budgeting, the Engine can be created on an overall budget that is far less than the average software utility. 
 
 The project will be contracted out to the development team Zeroes and Ones, a reputable contractor. Instead of spending overhead resources on a central operating location, work is done remotely from individual contractor's chosen workstation. The team already has necessary equipment and software, hence the slightly higher than average hourly rate. 
 
@@ -17,7 +17,7 @@ for costly proprietary software. The developers have assumed familiarity with th
 
 Once the product is completed, there will be an associated cost of deployment. This deployment cost includes web hosting and technical support, for which one member of team Zeroes and Ones will be contracted out on an hourly basis, as needed. 
 
-Ninja Designs will take over the graphical design, both for the Utility itself and the associated web page. Ninja Designs consists of one experienced professional design artist, complete with all necessary tools and software. For a small task as this, only half of the full development process is necessary to complete.
+Ninja Designs will take over the graphical design, both for the Engine itself and the associated web page. Ninja Designs consists of one experienced professional design artist, complete with all necessary tools and software. For a small task as this, only half of the full development process is necessary to complete.
 
 In terms of overhead, or operating costs, the contractors are mostly self contained. A certain amount of operating cost has been budgeted, and will be charged as necessary by the contractors. Expenses include web hosting, bandwidth, utility costs, telephone bills, and moderate refreshments. 
 
