@@ -8,11 +8,9 @@ _"The vision statement, also known as a project charter, should include an eleva
 
 The File Renamer is a great utility for the organization-conscious computer user. It will allow anyone to quickly and easily rename many files at once, without the hassle of clicking and typing over and over. Given a simple pattern, a click of a button will rename all of the files that it applies to. The pattern could be a word, a combination of metadata (for music and other media), or even a regular expression.
 
-_(still need competition etc, and risks)_
-
 *Competition*
 
-  * [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - Windows only! We beat them there... but they kinda kick our asses.
+  * [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - A windows-only, well-featured file renamer. Supports metadata from music _and_ pictures.
   * [http://myprogramspace.blogspot.com/2008/07/krename-multi-file-rename-tool-v0.html This was listed as best on someone's list of file renamer utilities] - has all of our features... we could use this for inspiration for new features.
   * [http://www.sherrodcomputers.com/products_filerenamer.cfm One that costs money] - If we show that we're better in some way than it, then that's awesome.
   * [http://www.softpedia.com/get/System/File-Management/CKRename.shtml A real basic one] - we are probably going to be better than this one.
