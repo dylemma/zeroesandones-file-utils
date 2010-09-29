@@ -5,3 +5,27 @@
 _Even though we can't pay you to complete your project, you need to develop a project budget which shows how much money you would need to develop your project if someone were paying you to do so. You should include the cost of any materials which you may need to purchase, such as software, hardware, or any other resources necessary for the project or team. You must also show your staffing costs (salary/paychecks). The budget must be presented in terms of US dollars, as that is the local currency. Attempt to make this as realistic as possible, although creativity leeway is provided._
 
 ----
+
+
+
+The File Utility Project is being developed at a rate unprecedented for it's scope. 
+However, with proper time management and budgeting, the Utility can be created for an
+overall (expense) that is far less than the average software utility (what is the cost?).
+
+-Instead of spending resources on a central location, work will be done remotely, from 
+the developers chosen workstation.
+
+-there will be as few traditional development meetings as possible, which tend to get
+little accomplished over long periods of time. instead of formal meetings, a system for
+inter team communication will be used
+
+-The project itself can be developed using freely-distributed tools, eliminating the need
+for costly proprietary software
+
+-developers have assumed familiarity with the tools, eliminating the need for training
+
+-
+
+-add extra time for testing, deployment, customer meetings?
+-add money for hosting!
+-
