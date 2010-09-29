@@ -8,7 +8,7 @@ _Even though we can't pay you to complete your project, you need to develop a pr
 
 
 
-FIRE is being developed at a rate unprecedented for it's scope. However, with proper time management and budgeting, the Engine can be created on an overall budget that is far less than the average software utility. 
+FiRE is being developed at a rate unprecedented for it's scope. However, with proper time management and budgeting, the Engine can be created on an overall budget that is far less than the average software utility. 
 
 The project will be contracted out to the development team Zeroes and Ones, a reputable contractor. Instead of spending overhead resources on a central operating location, work is done remotely from individual contractor's chosen workstation. The team already has necessary equipment and software, hence the slightly higher than average hourly rate. 
 
