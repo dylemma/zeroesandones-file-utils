@@ -122,3 +122,10 @@ Use cases will be driven by our [Features]
        # User selects cancel
          * Returned to main window with fields as they were
     * Post Conditions: User returned to main window, if  from load, then fields are populated, if from cancel, then the fields are as they were left.
+
+  * Use Case: Undo a Rename Event
+  * Use Case: Create a Capitalization Rule
+  * Use Case: Create an Image Metadata Renaming Rule
+  * Use Case: Rename files by adding a Numeric List
+  * Use Case: Enable/Disable Logging of Rename Events
+  * Use Case: Use Content Assist
