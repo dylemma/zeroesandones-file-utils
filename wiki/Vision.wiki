@@ -11,6 +11,6 @@ The File Renamer is a great utility for the organization-conscious computer user
 *Competition*
 
   * [http://www.bulkrenameutility.co.uk/Main_Intro.php An existing file renamer] - A windows-only, well-featured file renamer. Supports metadata from music _and_ pictures.
-  * [http://myprogramspace.blogspot.com/2008/07/krename-multi-file-rename-tool-v0.html This was listed as best on someone's list of file renamer utilities] - has all of our features... we could use this for inspiration for new features.
-  * [http://www.sherrodcomputers.com/products_filerenamer.cfm One that costs money] - If we show that we're better in some way than it, then that's awesome.
-  * [http://www.softpedia.com/get/System/File-Management/CKRename.shtml A real basic one] - we are probably going to be better than this one.
+  * [http://myprogramspace.blogspot.com/2008/07/krename-multi-file-rename-tool-v0.html "Ken's Rename"] - Has a multitude of features: Given our two month timespan we hope to match as many as we can. Potential future development would have us surpass it.
+  * [http://www.sherrodcomputers.com/products_filerenamer.cfm Sherrod's Renamer] - The version of this program that can undo and log rename events costs $19.99.
+  * [http://www.softpedia.com/get/System/File-Management/CKRename.shtml CKRename] - A free program that offers basic renaming options
