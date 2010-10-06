@@ -2,6 +2,8 @@
 
 =Elaboration=
 
+[https://docs0.google.com/document/d/1NOKk9Gra56NkeJtXGnjdUPtOQNWiVLvt4ohpNxN7cyY/ Elaboration on Google Docs]
+
 ===[DomainModel Domain Model Diagram]===
 
 Create a diagram that identifies conceptual classes, associations, and attributes within your project domain. The diagram must use proper UML notation for a domain model diagram. 
