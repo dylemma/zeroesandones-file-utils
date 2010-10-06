@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer;
+package edu.zao.fire.views.renamer;
 
 import org.eclipse.jface.viewers.StyledCellLabelProvider;
 import org.eclipse.jface.viewers.StyledString;
@@ -12,8 +12,8 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.PlatformUI;
 
-import edu.zao.futils.views.renamer.filter.AffectedRenameItemFilter;
-import edu.zao.futils.views.renamer.filter.RenamerItemFilter;
+import edu.zao.fire.views.renamer.filter.AffectedRenameItemFilter;
+import edu.zao.fire.views.renamer.filter.RenamerItemFilter;
 
 public class RenamerItemLabelProvider extends StyledCellLabelProvider {
 	private final RenamerItemFilter renamedFilter = new AffectedRenameItemFilter();

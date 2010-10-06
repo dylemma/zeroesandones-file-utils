@@ -7,7 +7,7 @@
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
-               class="edu.zao.futils.Application">
+               class="edu.zao.fire.rcp.Application">
          </run>
       </application>
    </extension>
@@ -15,7 +15,7 @@
          point="org.eclipse.ui.perspectives">
       <perspective
             name="Perspective"
-            class="edu.zao.futils.Perspective"
+            class="edu.zao.fire.rcp.Perspective"
             id="file-utils.perspective">
       </perspective>
    </extension>
@@ -23,11 +23,11 @@
          point="org.eclipse.ui.views">
       <view
             name="View"
-            class="edu.zao.futils.views.DemoView"
+            class="edu.zao.fire.views.DemoView"
             id="file-utils.view">
       </view>
       <view
-            class="edu.zao.futils.views.renamer.RenamerView"
+            class="edu.zao.fire.views.renamer.RenamerView"
             id="file-utils.renamer.view"
             name="Renaming View"
             restorable="true">
@@ -36,6 +36,12 @@
             class="edu.zao.futils.views.example.vogella.View"
             id="file-utils.vogella-demo-view"
             name="Person Table"
+            restorable="true">
+      </view>
+      <view
+            class="edu.zao.fire.views.metarenamer.MetaRenamerView"
+            id="file-utils.metarenamer.view"
+            name="Metadata Renamer View"
             restorable="true">
       </view>
    </extension>
@@ -50,8 +56,18 @@
                moveable="true"
                relationship="left"
                relative="org.eclipse.ui.editorss"
-               showTitle="false"
+               showTitle="true"
                standalone="true"
+               visible="true">
+         </view>
+         <view
+               closeable="false"
+               id="file-utils.metarenamer.view"
+               minimized="false"
+               moveable="false"
+               relationship="stack"
+               relative="file-utils.renamer.view"
+               showTitle="true"
                visible="true">
          </view>
       </perspectiveExtension>
@@ -84,6 +100,15 @@
                value="icons/flame-16.png,icons/flame-32.png,icons/flame-48.png,icons/flame-64.png,icons/flame-128.png">
          </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="edu.zao.fire.editors.TestEditor"
+            default="false"
+            id="file-utils.testeditor"
+            name="TestEditor">
+      </editor>
    </extension>
 
 </plugin>

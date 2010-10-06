@@ -1,4 +1,4 @@
-package edu.zao.futils;
+package edu.zao.fire.rcp;
 
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;

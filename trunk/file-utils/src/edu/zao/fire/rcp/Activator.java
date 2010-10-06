@@ -1,4 +1,4 @@
-package edu.zao.futils;
+package edu.zao.fire.rcp;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

@@ -1,6 +1,6 @@
-package edu.zao.futils.views.renamer.filter;
+package edu.zao.fire.views.renamer.filter;
 
-import edu.zao.futils.views.renamer.RenamerItem;
+import edu.zao.fire.views.renamer.RenamerItem;
 
 public class AffectedRenameItemFilter implements RenamerItemFilter {
 

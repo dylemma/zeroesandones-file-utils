@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer;
+package edu.zao.fire.views.renamer;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.Viewer;
 
-import edu.zao.futils.views.renamer.filter.RenamerItemFilter;
+import edu.zao.fire.views.renamer.filter.RenamerItemFilter;
 
 public class RenamerItemContentProvider implements IStructuredContentProvider {
 	private RenamerItemFilter itemFilter;

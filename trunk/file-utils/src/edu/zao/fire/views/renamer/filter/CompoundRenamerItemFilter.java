@@ -1,9 +1,9 @@
-package edu.zao.futils.views.renamer.filter;
+package edu.zao.fire.views.renamer.filter;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import edu.zao.futils.views.renamer.RenamerItem;
+import edu.zao.fire.views.renamer.RenamerItem;
 
 public class CompoundRenamerItemFilter implements RenamerItemFilter {
 	private final List<RenamerItemFilter> innerFilters = new LinkedList<RenamerItemFilter>();

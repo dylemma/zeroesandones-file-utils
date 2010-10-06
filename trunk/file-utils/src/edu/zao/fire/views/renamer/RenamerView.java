@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer;
+package edu.zao.fire.views.renamer;
 
 import java.io.File;
 
@@ -32,10 +32,11 @@ import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.ViewPart;
 
-import edu.zao.futils.views.renamer.RenamerBackend.StatusListener;
-import edu.zao.futils.views.renamer.filter.AffectedRenameItemFilter;
-import edu.zao.futils.views.renamer.filter.CompoundRenamerItemFilter;
-import edu.zao.futils.views.renamer.filter.DeactivatableRenamerItemFilter;
+import edu.zao.fire.Renamer;
+import edu.zao.fire.Renamer.StatusListener;
+import edu.zao.fire.views.renamer.filter.AffectedRenameItemFilter;
+import edu.zao.fire.views.renamer.filter.CompoundRenamerItemFilter;
+import edu.zao.fire.views.renamer.filter.DeactivatableRenamerItemFilter;
 
 public class RenamerView extends ViewPart {
 	private Text renameSourceText;
@@ -57,7 +58,7 @@ public class RenamerView extends ViewPart {
 
 	private final RenamerItemContentProvider tableContentProvider = new RenamerItemContentProvider();
 
-	private final RenamerBackend renamer = new RenamerBackend();
+	private final Renamer renamer = new Renamer();
 
 	@Override
 	public void createPartControl(Composite parent) {
@@ -284,10 +285,10 @@ public class RenamerView extends ViewPart {
 
 			@Override
 			public void status(String statusType) {
-				if (statusType == RenamerBackend.NORMAL_STATUS) {
+				if (statusType == Renamer.NORMAL_STATUS) {
 					regexErrorDecoration.hide();
 					renameSourceText.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_LIST_BACKGROUND));
-				} else if (statusType == RenamerBackend.SOURCE_REGEX_ERROR) {
+				} else if (statusType == Renamer.SOURCE_REGEX_ERROR) {
 					regexErrorDecoration.show();
 					renameSourceText.setBackground(fieldErrorColor);
 				}
@@ -302,7 +303,7 @@ public class RenamerView extends ViewPart {
 		renamer.addStatusListener(new StatusListener() {
 			@Override
 			public void status(String statusType) {
-				if (statusType == RenamerBackend.TARGET_NAMES_CONFLICT) {
+				if (statusType == Renamer.TARGET_NAMES_CONFLICT) {
 					nameConflictDecoration.show();
 				} else {
 					nameConflictDecoration.hide();

@@ -1,4 +1,4 @@
-package edu.zao.futils.views;
+package edu.zao.fire.views;
 
 import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.ITableLabelProvider;

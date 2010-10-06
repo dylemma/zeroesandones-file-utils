@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer;
+package edu.zao.fire.views.renamer;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;

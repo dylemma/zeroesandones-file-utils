@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer;
+package edu.zao.fire;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,7 +10,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class RenamerBackend {
+import edu.zao.fire.util.FileGatherer;
+import edu.zao.fire.views.renamer.RenamerItem;
+
+public class Renamer {
 	private String rootPath;
 	private boolean useRegularExpressions;
 	private String sourceReplacementString = "";
@@ -21,16 +24,22 @@ public class RenamerBackend {
 		void status(String statusType);
 	}
 
+	// TODO: replace the status strings by using this enum
+	public static enum Status {
+		TARGET_NAME_CONFLICT, NORMAL_STATUS
+	}
+
 	public final static String TARGET_NAMES_CONFLICT = "t_name_conflict";
 	public final static String TARGET_NAMES_OK = "t_name_ok";
 
+	// TODO: remove regex-specific code from this class
 	public final static String SOURCE_REGEX_ERROR = "s_regex_error";
 	public final static String TARGET_REGEX_ERROR = "t_regex_error";
 	public final static String NORMAL_STATUS = "norm_status";
 
 	private final List<StatusListener> statusListeners = new LinkedList<StatusListener>();
 
-	public RenamerBackend() {
+	public Renamer() {
 
 	}
 
