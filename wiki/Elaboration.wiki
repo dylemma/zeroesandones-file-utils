@@ -6,7 +6,7 @@
 
 Create a diagram that identifies conceptual classes, associations, and attributes within your project domain. The diagram must use proper UML notation for a domain model diagram. 
 
-===[SuppSpec Supplemental Specificatio]n===
+===[SuppSpec Supplemental Specification]===
 
 Include a complete set of requirements for your project. Use the FURPS+ model to find any and all requirements for your project. The functional requirement list must include requirements drawn out of the use cases. All requirements must be numbered and have an assigned priority using a ranking system such as MoSCoW. 
 
