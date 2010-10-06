@@ -79,6 +79,10 @@
                name="appName"
                value="DeployTest">
          </property>
+         <property
+               name="windowImages"
+               value="icons/flame-16.png,icons/flame-32.png,icons/flame-48.png,icons/flame-64.png,icons/flame-128.png">
+         </property>
       </product>
    </extension>
 

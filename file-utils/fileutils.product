@@ -3,12 +3,34 @@
 
 <product name="DeployTest" uid="fileutils.product" id="file-utils.product" application="file-utils.application" version="0.0.1" useFeatures="false" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
+
+   <windowImages i16="/file-utils/icons/flame-16.png" i32="/file-utils/icons/flame-32.png" i48="/file-utils/icons/flame-48.png" i64="/file-utils/icons/flame-64.png" i128="/file-utils/icons/flame-128.png"/>
+
+
+   <launcher name="FiRE">
+      <solaris/>
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/file-utils/icons/flame-16.bmp"
+            winSmallLow="/file-utils/icons/flame-16.bmp"
+            winMediumHigh="/file-utils/icons/flame-32.bmp"
+            winMediumLow="/file-utils/icons/flame-32.bmp"
+            winLargeHigh="/file-utils/icons/flame-48.bmp"
+            winLargeLow="/file-utils/icons/flame-48.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+      <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/OSGi%Minimum-1.0</windows>
+   </vm>
 
    <plugins>
       <plugin id="com.ibm.icu"/>
