@@ -4,11 +4,13 @@
   * [Home]
 ===SD&D===
   * [Assignments]
-  * [Vision]
-  * [UseCases]
-  * [Glossary]
-  * [Schedule]
-  * [Budget]
+    * Inception
+      * [Vision]
+      * [UseCases]
+      * [Glossary]
+      * [Schedule]
+      * [Budget]
+    * Elaboration
   
 ===Project===
   * [Features]
