@@ -2,7 +2,7 @@
 
 =Elaboration=
 
-[https://docs0.google.com/document/d/1NOKk9Gra56NkeJtXGnjdUPtOQNWiVLvt4ohpNxN7cyY/ Elaboration on Google Docs]
+[https://docs0.google.com/document/d/1NOKk9Gra56NkeJtXGnjdUPtOQNWiVLvt4ohpNxN7cyY/edit# Elaboration on Google Docs]
 
 ===[DomainModel Domain Model Diagram]===
 
