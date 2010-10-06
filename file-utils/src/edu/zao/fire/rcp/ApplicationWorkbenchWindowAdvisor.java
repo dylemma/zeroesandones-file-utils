@@ -1,4 +1,4 @@
-package edu.zao.futils;
+package edu.zao.fire.rcp;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.ui.application.ActionBarAdvisor;
@@ -23,6 +23,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setInitialSize(new Point(700, 300));
 		configurer.setShowCoolBar(false);
 		configurer.setShowStatusLine(false);
-		configurer.setTitle("Dylan's File Utility");
+		configurer.setTitle("FiRE");
 	}
 }

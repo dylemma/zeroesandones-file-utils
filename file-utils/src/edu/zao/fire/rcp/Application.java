@@ -1,4 +1,4 @@
-package edu.zao.futils;
+package edu.zao.fire.rcp;
 
 import org.eclipse.equinox.app.IApplication;
 import org.eclipse.equinox.app.IApplicationContext;

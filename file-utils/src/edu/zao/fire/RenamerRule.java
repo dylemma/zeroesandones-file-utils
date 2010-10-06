@@ -1,4 +1,4 @@
-package edu.zao.futils.views.renamer.rules;
+package edu.zao.fire;
 
 import java.io.File;
 

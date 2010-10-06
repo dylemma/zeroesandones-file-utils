@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: File-utils
 Bundle-SymbolicName: file-utils; singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: edu.zao.futils.Activator
+Bundle-Activator: edu.zao.fire.rcp.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
