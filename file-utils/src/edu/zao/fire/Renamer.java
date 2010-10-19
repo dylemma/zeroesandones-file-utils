@@ -1,158 +1,151 @@
 package edu.zao.fire;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 
 import edu.zao.fire.util.FileGatherer;
-import edu.zao.fire.views.renamer.RenamerItem;
 
+/**
+ * Back end class that handles the actual changing of Files' names. It can be
+ * pointed to a particular directory, then told to apply changes. At that point,
+ * it will apply its <code>currentRule</code> to each file within that
+ * directory.
+ * 
+ * @author dylan
+ */
 public class Renamer {
-	private String rootPath;
-	private boolean useRegularExpressions;
-	private String sourceReplacementString = "";
-	private String targetReplacementString = "";
-	private final List<RenamerItem> items = new ArrayList<RenamerItem>();
+	private RenamerRule currentRule;
+	private File currentDirectory;
+	private final List<File> localFiles = new ArrayList<File>();
 
-	public static interface StatusListener {
-		void status(String statusType);
+	// ----------------------------------------------------------------
+	// Section for error handling and error listeners
+	// ----------------------------------------------------------------
+
+	/**
+	 * Enumeration that describes the types of various errors that could happen
+	 * during the renaming process.
+	 */
+	public static enum ErrorType {
+		IOException, NameConflict
+		// TODO: add more when we find more error cases
 	}
 
-	// TODO: replace the status strings by using this enum
-	public static enum Status {
-		TARGET_NAME_CONFLICT, NORMAL_STATUS
+	/**
+	 * Interface that defines the behavior of an object that listens to this
+	 * Renamer for status updates concerning errors.
+	 * 
+	 * @author dylan
+	 */
+	public static interface ErrorListener {
+		/**
+		 * This function will be called if this ErrorListener has been added to
+		 * a {@link Renamer} via
+		 * {@link Renamer#addErrorListener(ErrorListener)}.
+		 * 
+		 * @param errorType
+		 *            The type of the error caused by the Renamer.
+		 * @param file
+		 *            The file in question that was unable to be renamed.
+		 * @param rule
+		 *            The {@link RenamerRule} that was being used when the error
+		 *            was caused.
+		 */
+		void gotError(ErrorType errorType, File file, RenamerRule rule);
 	}
 
-	public final static String TARGET_NAMES_CONFLICT = "t_name_conflict";
-	public final static String TARGET_NAMES_OK = "t_name_ok";
+	private final List<ErrorListener> errorListeners = new ArrayList<ErrorListener>();
 
-	// TODO: remove regex-specific code from this class
-	public final static String SOURCE_REGEX_ERROR = "s_regex_error";
-	public final static String TARGET_REGEX_ERROR = "t_regex_error";
-	public final static String NORMAL_STATUS = "norm_status";
-
-	private final List<StatusListener> statusListeners = new LinkedList<StatusListener>();
-
-	public Renamer() {
-
+	/**
+	 * Add an {@link ErrorListener} to be notified whenever this Renamer
+	 * encounters an error.
+	 * 
+	 * @param listener
+	 *            The {@link ErrorListener} to be added.
+	 */
+	public void addErrorListener(ErrorListener listener) {
+		errorListeners.add(listener);
 	}
 
-	public void useRegex(boolean useRegex) {
-		useRegularExpressions = useRegex;
-		update();
+	/**
+	 * Remove an {@link ErrorListener} so that it will no longer be notified
+	 * whenever this Renamer encounters an error.
+	 * 
+	 * @param listener
+	 *            The {@link ErrorListener} to be removed.
+	 */
+	public void removeErrorListener(ErrorListener listener) {
+		errorListeners.remove(listener);
 	}
 
-	public void setRootPath(String path) {
-		rootPath = path;
-		gatherFiles(rootPath);
-		update();
-	}
-
-	public String getRootPath() {
-		return rootPath;
-	}
-
-	private void gatherFiles(String path) {
-		items.clear();
-		for (File file : new FileGatherer(path)) {
-			items.add(new RenamerItem(file));
+	/**
+	 * Notify all {@link ErrorListener}s that an error has occurred.
+	 * 
+	 * @param errorType
+	 *            The type of the error caused by this Renamer.
+	 * @param file
+	 *            The file in question that was unable to be renamed.
+	 * @param rule
+	 *            The {@link RenamerRule} that was being used when the error was
+	 *            caused.
+	 */
+	private void throwError(ErrorType errorType, File file, RenamerRule rule) {
+		for (ErrorListener listener : errorListeners) {
+			listener.gotError(errorType, file, rule);
 		}
 	}
 
-	public void setSourceReplacementString(String sourceString) {
-		sourceReplacementString = sourceString;
-		update();
-	}
+	// ----------------------------------------------------------------
+	// End of error handling section
+	// ----------------------------------------------------------------
 
-	public void setTargetReplacementString(String targetString) {
-		targetReplacementString = targetString;
-		update();
-	}
-
-	public List<RenamerItem> getItems() {
-		return items;
-	}
-
-	private void update() {
-		boolean gotSourceError = false;
-
-		for (RenamerItem item : items) {
-			String oldName = item.getFile().getName();
-
-			if (sourceReplacementString.isEmpty()) {
-				item.setTarget(oldName);
-				continue;
-			}
-
-			if (!useRegularExpressions) {
-				String newName = oldName.replace(sourceReplacementString, targetReplacementString);
-				item.setTarget(newName);
-			} else {
-				try {
-					Pattern sourceRegex = Pattern.compile(sourceReplacementString);
-					Matcher matcher = sourceRegex.matcher(oldName);
-					String newName = matcher.replaceAll(targetReplacementString);
-					item.setTarget(newName);
-				} catch (PatternSyntaxException pse) {
-					gotSourceError = true;
-				} catch (Exception e) {
-				}
-			}
-		}
-
-		if (gotSourceError) {
-			fireStatus(SOURCE_REGEX_ERROR);
-		} else {
-			fireStatus(NORMAL_STATUS);
-		}
-	}
-
+	/**
+	 * Apply the current renaming rule to all of the files in the current
+	 * directory. If any errors are encountered during this process, the
+	 * {@link ErrorListener}s should be notified.
+	 */
 	public void applyChanges() {
-		if (!verifyNoNameConflicts()) {
-			fireStatus(TARGET_NAMES_CONFLICT);
-			return;
-		} else {
-			fireStatus(TARGET_NAMES_OK);
-		}
-
-		// actually apply the changes...
-		for (RenamerItem item : items) {
-			File newNamedFile = new File(item.getFile().getParentFile(), item.getTarget());
-			item.getFile().renameTo(newNamedFile);
-			item.setFile(newNamedFile);
-		}
-	}
-
-	private boolean verifyNoNameConflicts() {
-		Set<String> targetNames = new TreeSet<String>();
-		for (RenamerItem item : items) {
-			String targetName = item.getTarget();
-			if (targetNames.contains(targetName)) {
-				return false;
-			} else {
-				targetNames.add(targetName);
+		// TODO: add a naming conflict check
+		for (File file : localFiles) {
+			try {
+				// TODO: cause actual changes to happen
+				System.out.println("rename " + file.getName() + " to " + currentRule.getNewName(file));
+			} catch (IOException e) {
+				// tell the error listeners that something went wrong
+				throwError(ErrorType.IOException, file, currentRule);
 			}
 		}
-		return true;
 	}
 
-	public void addStatusListener(StatusListener listener) {
-		statusListeners.add(listener);
-	}
-
-	public void removeStatusListener(StatusListener listener) {
-		statusListeners.remove(listener);
-	}
-
-	private void fireStatus(String statusType) {
-		for (StatusListener listener : statusListeners) {
-			listener.status(statusType);
+	/**
+	 * Move to the specified <code>directory</code> and update the list of local
+	 * files.
+	 * 
+	 * @param directory
+	 *            The directory to set as the current directory
+	 */
+	public void setCurrentDirectory(File directory) {
+		if (!directory.isDirectory()) {
+			throw new IllegalArgumentException("The given 'directory' MUST be a directory.");
 		}
+		currentDirectory = directory;
+		localFiles.clear();
+		for (File file : new FileGatherer(directory)) {
+			localFiles.add(file);
+		}
+	}
+
+	public File getCurrentDirectory() {
+		return currentDirectory;
+	}
+
+	public void setCurrentRule(RenamerRule rule) {
+		currentRule = rule;
+	}
+
+	public RenamerRule getCurrentRule() {
+		return currentRule;
 	}
 }

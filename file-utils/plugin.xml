@@ -83,6 +83,14 @@
                   label="Exit">
             </command>
          </menu>
+         <toolbar
+               id="file-utils.toolbar1">
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit"
+                  style="push">
+            </command>
+         </toolbar>
       </menuContribution>
    </extension>
    <extension
