@@ -32,8 +32,8 @@ import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.ViewPart;
 
-import edu.zao.fire.Renamer;
-import edu.zao.fire.Renamer.StatusListener;
+import edu.zao.fire.OLDRenamer;
+import edu.zao.fire.OLDRenamer.StatusListener;
 import edu.zao.fire.views.renamer.filter.AffectedRenameItemFilter;
 import edu.zao.fire.views.renamer.filter.CompoundRenamerItemFilter;
 import edu.zao.fire.views.renamer.filter.DeactivatableRenamerItemFilter;
@@ -58,7 +58,7 @@ public class RenamerView extends ViewPart {
 
 	private final RenamerItemContentProvider tableContentProvider = new RenamerItemContentProvider();
 
-	private final Renamer renamer = new Renamer();
+	private final OLDRenamer renamer = new OLDRenamer();
 
 	@Override
 	public void createPartControl(Composite parent) {
@@ -285,10 +285,10 @@ public class RenamerView extends ViewPart {
 
 			@Override
 			public void status(String statusType) {
-				if (statusType == Renamer.NORMAL_STATUS) {
+				if (statusType == OLDRenamer.NORMAL_STATUS) {
 					regexErrorDecoration.hide();
 					renameSourceText.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_LIST_BACKGROUND));
-				} else if (statusType == Renamer.SOURCE_REGEX_ERROR) {
+				} else if (statusType == OLDRenamer.SOURCE_REGEX_ERROR) {
 					regexErrorDecoration.show();
 					renameSourceText.setBackground(fieldErrorColor);
 				}
@@ -303,7 +303,7 @@ public class RenamerView extends ViewPart {
 		renamer.addStatusListener(new StatusListener() {
 			@Override
 			public void status(String statusType) {
-				if (statusType == Renamer.TARGET_NAMES_CONFLICT) {
+				if (statusType == OLDRenamer.TARGET_NAMES_CONFLICT) {
 					nameConflictDecoration.show();
 				} else {
 					nameConflictDecoration.hide();
