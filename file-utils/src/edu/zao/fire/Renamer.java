@@ -111,7 +111,10 @@ public class Renamer {
 		for (File file : localFiles) {
 			try {
 				// TODO: cause actual changes to happen
-				System.out.println("rename " + file.getName() + " to " + currentRule.getNewName(file));
+				String newName = currentRule.getNewName(file);
+				System.out.println("want to rename " + file.getName() + " to " + currentRule.getNewName(file));
+				File newFile = new File(newName);
+				file.renameTo(newFile);
 			} catch (IOException e) {
 				// tell the error listeners that something went wrong
 				throwError(ErrorType.IOException, file, currentRule);
