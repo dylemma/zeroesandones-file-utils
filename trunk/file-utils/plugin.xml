@@ -22,26 +22,15 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            name="View"
-            class="edu.zao.fire.views.DemoView"
-            id="file-utils.view">
-      </view>
-      <view
             class="edu.zao.fire.views.renamer.RenamerView"
             id="file-utils.renamer.view"
             name="Renaming View"
             restorable="true">
       </view>
       <view
-            class="edu.zao.futils.views.example.vogella.View"
-            id="file-utils.vogella-demo-view"
-            name="Person Table"
-            restorable="true">
-      </view>
-      <view
-            class="edu.zao.fire.views.metarenamer.MetaRenamerView"
-            id="file-utils.metarenamer.view"
-            name="Metadata Renamer View"
+            class="edu.zao.fire.views.browser.BrowserView"
+            id="file-utils.views.browser"
+            name="Browser View"
             restorable="true">
       </view>
    </extension>
@@ -51,23 +40,14 @@
             targetID="*">
          <view
                closeable="false"
-               id="file-utils.renamer.view"
+               id="file-utils.views.browser"
                minimized="false"
                moveable="true"
-               relationship="left"
+               ratio="0.382"
+               relationship="right"
                relative="org.eclipse.ui.editorss"
-               showTitle="true"
+               showTitle="false"
                standalone="true"
-               visible="true">
-         </view>
-         <view
-               closeable="false"
-               id="file-utils.metarenamer.view"
-               minimized="false"
-               moveable="false"
-               relationship="stack"
-               relative="file-utils.renamer.view"
-               showTitle="true"
                visible="true">
          </view>
       </perspectiveExtension>
@@ -77,20 +57,78 @@
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu">
          <menu
-               label="File">
-            <command
-                  commandId="org.eclipse.ui.file.exit"
-                  label="Exit">
-            </command>
-         </menu>
-         <toolbar
-               id="file-utils.toolbar1">
+               label="File"
+               mnemonic="F">
+            <menu
+                  label="New..."
+                  mnemonic="N">
+               <command
+                     commandId="file-utils.commands.openlist"
+                     label="List Rule"
+                     mnemonic="L"
+                     style="push">
+               </command>
+               <command
+                     commandId="file-utils.commands.openmatchreplace"
+                     label="Match/Replace Rule"
+                     mnemonic="R"
+                     style="push">
+               </command>
+               <command
+                     commandId="file-utils.commands.openmetadata"
+                     label="Metadata Rule"
+                     mnemonic="M"
+                     style="push">
+               </command>
+            </menu>
             <command
                   commandId="org.eclipse.ui.file.exit"
                   label="Exit"
-                  style="push">
+                  mnemonic="x">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="file-utils.toolbar2">
+            <command
+                  commandId="file-utils.commands.openmatchreplace"
+                  icon="IMG_TOOL_NEW_WIZARD"
+                  id="file-utils.toolbar.new.dropdown"
+                  style="pulldown"
+                  tooltip="New Match/Replace Rule">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.save"
+                  style="push"
+                  tooltip="This is a dummy button. A real save button should eventually go here.">
             </command>
          </toolbar>
+      </menuContribution>
+      <menuContribution
+            locationURI="menu:file-utils.toolbar.new.dropdown">
+         <command
+               commandId="file-utils.commands.openlist"
+               icon="IMG_TOOL_NEW_WIZARD"
+               id="file-utils.toolbar.newlistrule"
+               style="push"
+               tooltip="New List Rule">
+         </command>
+         <command
+               commandId="file-utils.commands.openmatchreplace"
+               icon="IMG_TOOL_NEW_WIZARD"
+               id="file-utils.toolbar.newmatchreplace"
+               style="push"
+               tooltip="New Match/Replace Rule">
+         </command>
+         <command
+               commandId="file-utils.commands.openmetadata"
+               icon="IMG_TOOL_NEW_WIZARD"
+               id="file-utils.toolbar.newmetadata"
+               style="push"
+               tooltip="New Metadata Rule">
+         </command>
       </menuContribution>
    </extension>
    <extension
@@ -112,11 +150,53 @@
    <extension
          point="org.eclipse.ui.editors">
       <editor
-            class="edu.zao.fire.editors.TestEditor"
+            class="edu.zao.fire.editors.matchreplace.MatchReplaceRuleEditor"
             default="false"
-            id="file-utils.testeditor"
-            name="TestEditor">
+            id="file-utils.editors.matchreplace"
+            name="Match/Replace Rule">
       </editor>
+      <editor
+            class="edu.zao.fire.editors.metadata.MetadataRuleEditor"
+            default="false"
+            id="file-utils.editors.metadata"
+            name="Metadata Rule">
+      </editor>
+      <editor
+            class="edu.zao.fire.editors.list.ListRuleEditor"
+            default="false"
+            id="file-utils.editors.list"
+            name="List Rule">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="file-utils.commands.openmatchreplace"
+            name="New Match/Replace Rule">
+      </command>
+      <command
+            id="file-utils.commands.openmetadata"
+            name="New Metadata Rule">
+      </command>
+      <command
+            id="file-utils.commands.openlist"
+            name="New List Rule">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="edu.zao.fire.commands.OpenMatchReplaceCommandHandler"
+            commandId="file-utils.commands.openmatchreplace">
+      </handler>
+      <handler
+            class="edu.zao.fire.commands.OpenMetadataCommandHandler"
+            commandId="file-utils.commands.openmetadata">
+      </handler>
+      <handler
+            class="edu.zao.fire.commands.OpenListCommandHandler"
+            commandId="file-utils.commands.openlist">
+      </handler>
    </extension>
 
 </plugin>

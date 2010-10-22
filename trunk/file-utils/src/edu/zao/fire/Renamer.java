@@ -42,8 +42,8 @@ public class Renamer {
 	public static interface ErrorListener {
 		/**
 		 * This function will be called if this ErrorListener has been added to
-		 * a {@link Renamer} via
-		 * {@link Renamer#addErrorListener(ErrorListener)}.
+		 * a {@link Renamer} via {@link Renamer#addErrorListener(ErrorListener)}
+		 * .
 		 * 
 		 * @param errorType
 		 *            The type of the error caused by the Renamer.
@@ -137,15 +137,36 @@ public class Renamer {
 		}
 	}
 
+	/**
+	 * @return The current root directory (i.e. the folder that contains all of
+	 *         the <code>localFile</code>s)
+	 */
 	public File getCurrentDirectory() {
 		return currentDirectory;
 	}
 
+	/**
+	 * Sets the current {@link RenamerRule} to the given <code>rule</code>.
+	 * 
+	 * @param rule
+	 *            The {@link RenamerRule} to be set as the new current rule.
+	 */
 	public void setCurrentRule(RenamerRule rule) {
 		currentRule = rule;
 	}
 
+	/**
+	 * @return The current {@link RenamerRule} being used by this Renamer
+	 */
 	public RenamerRule getCurrentRule() {
 		return currentRule;
+	}
+
+	/**
+	 * @return An object that can iterate over all of the <code>File</code>s
+	 *         that are currently considered "Local."
+	 */
+	public Iterable<File> getLocalFiles() {
+		return localFiles;
 	}
 }

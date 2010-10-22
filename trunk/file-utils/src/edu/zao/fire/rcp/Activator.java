@@ -4,6 +4,8 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
+import edu.zao.fire.editors.RenamerRuleEditorManager;
+
 /**
  * The activator class controls the plug-in life cycle
  */
@@ -15,10 +17,16 @@ public class Activator extends AbstractUIPlugin {
 	// The shared instance
 	private static Activator plugin;
 
+	private final RenamerRuleEditorManager editorManager = new RenamerRuleEditorManager();
+
 	/**
 	 * The constructor
 	 */
 	public Activator() {
+	}
+
+	public RenamerRuleEditorManager getEditorManager() {
+		return editorManager;
 	}
 
 	/*
