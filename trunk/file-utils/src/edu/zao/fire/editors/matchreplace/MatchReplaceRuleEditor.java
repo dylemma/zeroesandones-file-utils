@@ -23,6 +23,24 @@ public class MatchReplaceRuleEditor extends RenamerRuleEditor {
 
 	private MatchReplaceRule input;
 
+	private Text matchText;
+
+	private Text replaceText;
+
+	private Button caseSensitiveCheckBox;
+
+	private Button regexCheckBox;
+
+	private Button radioAllCaps;
+
+	private Button radioAllLower;
+
+	private Button radioSentenceCaps;
+
+	private Button radioTitleCaps;
+
+	private Button radioDontCareCaps;
+
 	public MatchReplaceRuleEditor() {
 	}
 
@@ -77,7 +95,7 @@ public class MatchReplaceRuleEditor extends RenamerRuleEditor {
 		matchLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false));
 
 		// set up the text box for the "Match" field
-		Text matchText = new Text(matchReplaceArea, SWT.SINGLE | SWT.BORDER);
+		matchText = new Text(matchReplaceArea, SWT.SINGLE | SWT.BORDER);
 		matchText.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false));
 
 		// set up the label for the "Replace" field
@@ -86,11 +104,15 @@ public class MatchReplaceRuleEditor extends RenamerRuleEditor {
 		replaceLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false));
 
 		// set up the text box for the "Replace" field
-		Text replaceText = new Text(matchReplaceArea, SWT.SINGLE | SWT.BORDER);
+		replaceText = new Text(matchReplaceArea, SWT.SINGLE | SWT.BORDER);
 		replaceText.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false));
 
+		caseSensitiveCheckBox = new Button(parent, SWT.CHECK);
+		caseSensitiveCheckBox.setText("Case sensitive");
+		caseSensitiveCheckBox.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false));
+
 		// set up the Regular Expressions check box
-		Button regexCheckBox = new Button(parent, SWT.CHECK);
+		regexCheckBox = new Button(parent, SWT.CHECK);
 		regexCheckBox.setText("Use Regular Expressions");
 		regexCheckBox.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false));
 
@@ -101,16 +123,19 @@ public class MatchReplaceRuleEditor extends RenamerRuleEditor {
 		capitalizationGroup.setLayout(new GridLayout(1, false));
 
 		// set up the Capitalization radio buttons
-		Button radioAllCaps = new Button(capitalizationGroup, SWT.RADIO);
+		radioDontCareCaps = new Button(capitalizationGroup, SWT.RADIO);
+		radioDontCareCaps.setText("(no modifier)");
+
+		radioAllCaps = new Button(capitalizationGroup, SWT.RADIO);
 		radioAllCaps.setText("ALL CAPS");
 
-		Button radioAllLower = new Button(capitalizationGroup, SWT.RADIO);
+		radioAllLower = new Button(capitalizationGroup, SWT.RADIO);
 		radioAllLower.setText("all lowercase");
 
-		Button radioSentenceCaps = new Button(capitalizationGroup, SWT.RADIO);
+		radioSentenceCaps = new Button(capitalizationGroup, SWT.RADIO);
 		radioSentenceCaps.setText("Sentence capitalization");
 
-		Button radioTitleCaps = new Button(capitalizationGroup, SWT.RADIO);
+		radioTitleCaps = new Button(capitalizationGroup, SWT.RADIO);
 		radioTitleCaps.setText("Title Capitalization");
 
 	}

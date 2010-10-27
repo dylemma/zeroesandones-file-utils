@@ -13,6 +13,15 @@ public class MatchReplaceRule implements RenamerRule {
 	private String matchString = " ";
 	private String replaceString = " ";
 
+	private boolean isCaseSensitive = false;
+	private boolean matchRegularExpressions = false;
+
+	public static enum CapitalizationStyle {
+		NONE, ALL_CAPS, NO_CAPS, SENTENCE, TITLE
+	}
+
+	private CapitalizationStyle capitalizationState = CapitalizationStyle.NONE;
+
 	/**
 	 * Finds each instance of the <code>matchString</code> within the
 	 * <code>file</code>'s name, and replaces it with <code>replaceString</code>
@@ -57,5 +66,29 @@ public class MatchReplaceRule implements RenamerRule {
 	 */
 	public String getReplaceString() {
 		return replaceString;
+	}
+
+	public void setCaseSensitive(boolean isCaseSensitive) {
+		this.isCaseSensitive = isCaseSensitive;
+	}
+
+	public boolean isCaseSensitive() {
+		return isCaseSensitive;
+	}
+
+	public void setMatchRegularExpressions(boolean matchRegularExpressions) {
+		this.matchRegularExpressions = matchRegularExpressions;
+	}
+
+	public boolean isMatchRegularExpressions() {
+		return matchRegularExpressions;
+	}
+
+	public void setCapitalizationState(CapitalizationStyle capitalizationState) {
+		this.capitalizationState = capitalizationState;
+	}
+
+	public CapitalizationStyle getCapitalizationState() {
+		return capitalizationState;
 	}
 }
