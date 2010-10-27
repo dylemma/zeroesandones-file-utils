@@ -78,7 +78,7 @@ public class BrowserView extends ViewPart {
 		browserTableViewer.setInput(renamer);
 
 		// create the area for the bottom bar
-		Composite bottomBarArea = new Composite(parent, SWT.BORDER);
+		Composite bottomBarArea = new Composite(parent, SWT.NONE);
 		GridLayout bottomBarLayout = new GridLayout(4, false);
 		bottomBarLayout.marginHeight = 0;
 		bottomBarLayout.marginWidth = 0;
