@@ -15,3 +15,8 @@
   * Ability to log undo events (or not- user's choice)
   * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries
   * Simple browsing capability within the UI
+
+= FiRE Version 2.0 Proposed Features =
+  * Ability to rename pictures based off of included EXIF metadata
+  * Ability to get music metadata from an online database
+  * Filtering of files in the browser (i.e. apply rule only to .jpg's)
