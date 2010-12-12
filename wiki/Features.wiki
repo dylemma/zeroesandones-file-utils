@@ -1,6 +1,6 @@
 #summary Page listing proposed features for the project, as well as implemented features.
 
-= Implemented Features =
+= FiRE version 1.0: Implemented Features =
   * Preview results before actually renaming anything.
   * Renaming files based off of string segment inputs, replacing with a new string segment.
   * Renaming files based off of regular expressions (useful to truncate gibberish at the end of a file name)
@@ -15,7 +15,3 @@
   * Ability to log undo events (or not- user's choice)
   * Content Assist for entry of the "Match" and "Replace" fields, assisting in the use of regular expressions and previously used entries
   * Simple browsing capability within the UI
-= Proposed Features =
-
-  * Ability to rename pictures based off of included EXIF metadata
-  * Ability to get music metadata from an online database
